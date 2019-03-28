@@ -20,13 +20,16 @@ $blue: #25afe8
     padding: 0
     margin: 0
     letter-spacing: 1.1px
+    +helvetica
 
-
+h3
+    font-size: 37px
+    padding-left: 150px
+    margin: 45px 0
 
 .wrapper
     margin: 0 auto
     width: 1600px
-    +helvetica
     .header
         height: 160px
         padding: 0 150px 0
@@ -70,7 +73,7 @@ $blue: #25afe8
     width: 1300px
     &__drop-down
         height: 56px
-        width: 298px
+        width: 263px
         background-color: transparent
         background-color: $yellow
         border: none
@@ -81,7 +84,7 @@ $blue: #25afe8
         align-items: center
         justify-content: space-between
         width: 90px
-        & p
+        & a
             color: #f95164
             text-decoration: underline
             font-weight: bold
@@ -100,12 +103,15 @@ $blue: #25afe8
             width: 154px
             height: 52px
             padding: 0 10px
+            border: 1px solid gray
         &--btn
             width: 134px
-            height: 52px
+            height: 54px
             background-color: #191919 
             color: $font-color
             border-radius: 0 26px 26px 0
+            cursor: pointer
+            border: none
                 
 .slider
     display: flex
@@ -139,14 +145,255 @@ $blue: #25afe8
         color: $blue
         font-weight: bold
 
-
-
-.container
+.stock
+    display: flex
+    justify-content: space-between
+    width: 1300px
     margin: 0 auto
-    width: 100vw
-    position: relative
-    margin-bottom: 540px
-    z-index: 200
-    color: #3b3a30
-    font-family: 'Roboto Condensed', sans-serif
+    &__card-1, &__card-2, &__card-3
+        width: 436px
+        height: 398px
+        padding: 20px
+    &__card-1
+        background-image: url(../img/dishes.jpg)
+        background-position: 50% 100%
+        background-repeat: no-repeat
+    &__card-2
+        background: $blue
+        background-image: url(../img/towels.png)
+        background-repeat: no-repeat
+        background-position: right bottom
+    &__card-3
+        background: #f1f1f1
+        background-image: url(../img/teapot.png)
+        background-repeat: no-repeat
+        background-position: 50% 90%
 
+.title
+    font-size: 20px
+    font-weight: bold
+    text-decoration: underline
+
+.title-towels
+    font-size: 20px
+    font-weight: bold
+    text-decoration: underline
+    color: $font-color
+
+.price-towels
+    font-size: 22px
+    font-weight: bold
+    color: $font-color
+    padding-top: 15px
+
+.price
+    font-size: 22px
+    padding-top: 15px
+    &__old
+        position: relative
+        display: inline-block
+        color: gray
+        &:after
+            content: ""
+            display: block
+            position: absolute
+            left: 0
+            top: 50%
+            width: 110%
+            height: 0
+            border-bottom: 1px solid gray
+            transform: rotate(5deg)
+    &__new
+        margin-left: 25px
+        color: $blue
+        font-weight: bold
+
+.catalog
+    &__card
+        height: 403px
+        width: 300px
+        border: 1px solid #e2e2e2
+        display: flex
+        flex-direction: column
+        align-content: space-between
+        &--discount-1, &--discount-2
+            width: 62px
+            height: 32px
+            background: #f30a2b
+            color: $font-color
+            border-radius: 0 0 32px
+            & p
+                font-size: 14px
+                text-align: center
+                line-height: 230%
+        &--discount-2
+            background: #ffd304
+            color: #000
+        &--img
+            height: 200px
+            display: flex
+            justify-content: center
+            position: relative
+
+.card-descr
+    height: 130px
+    padding: 15px
+    &__title
+        font-size: 16px
+        color: #bebebe
+    &__link
+        padding: 18px 0
+        font-size: 15px
+        color: $blue
+        text-decoration: underline
+    &__price
+        display: flex
+        justify-content: space-between
+        &--btn
+            height: 40px
+            width: 150px
+            background: $yellow
+            border: none
+            display: flex
+            align-items: center
+            justify-content: center
+            font-weight: bold
+            & img
+                margin-right: 20px
+
+.old-price
+    line-height: 120%
+    font-size: 16px
+    color: #bebebe
+    text-decoration: line-through
+
+.new-price
+    font-size: 18px
+    font-weight: bold
+
+.sale
+    background-image: url(../img/background.jpg)
+    background-repeat: no-repeat
+    margin-left: 150px
+    width: 1300px
+    display: flex
+    justify-content: space-between
+    & img
+        left: 100px
+        position: relative
+    &__btn
+        position: relative
+        width: 226px
+        height: 52px
+        right: 20px
+        top: 80px
+        background-color: $yellow
+        border: none
+        border-radius: 26px
+        font-size: 16px
+        font-weight: bold
+    &__descr
+        width: 800px
+        padding-left: 35px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        color: $font-color
+        &--text
+            font-size: 40px
+        &--text-2
+            font-size: 32px
+
+.news
+    display: flex
+    justify-content: space-between
+    width: 1300px
+    margin: 0 auto
+    & img
+        width: 304px
+    &__card
+        width: 304px
+        height: 488px
+        &--time
+            margin: 10px 0
+            font-size: 16px
+            color: #aeaeae
+        &--title
+            font-size: 18px
+            text-decoration: underline
+        &--descr
+            margin: 10px 0
+            font-size: 13px
+        &--social
+            & img
+                width: 40%
+    
+.subscribe
+    background: $blue
+    width: 1300px
+    height: 80px
+    padding: 0 25px
+    margin-bottom: 62px
+    margin-left: 150px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__text
+        color: $font-color
+    &__send
+        &--input
+            width: 500px
+            height: 52px
+            border-radius: 30px 0 0 30px
+            border: 1px solid gray
+            padding-left: 20px
+        &--btn
+            width: 134px
+            height: 54px
+            margin-left: -7px
+            background: #191919
+            color: $font-color
+            border: none
+            border-radius: 0 30px 30px 0
+
+footer
+    background: #191919
+    & .footer
+        margin: 0 auto
+        width: 1300px
+        height: 200px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &__logo
+            &--text
+                color: #aeaeae
+                font-size: 14px
+                margin-top: 10px
+                & a
+                    color: $yellow
+        &__contact
+            display: flex
+            justify-content: flex-end
+            flex-direction: column
+            text-align: right
+            color: $font-color
+            &--phone
+                font-size: 25px
+                margin: 30px 0
+            &--adress
+                font-size: 14px
+            &--map a
+                text-decoration: underline
+                color: $yellow
+                font-size: 14px
+            & ul
+                list-style: none
+                & li
+                    display: inline
+                    font-size: 14px
+                    color: $font-color
+                    & a
+                        color: $font-color
+                    & a:hover
+                        color: $yellow

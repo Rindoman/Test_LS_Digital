@@ -30,7 +30,7 @@
                         <img src="img/avatar.png" alt="avatar">
                         <div class="personal-info__data">
                             <p class="personal-info__data--enter">Личный кабинет</p>
-                            <p class="personal-info__data--enter">Вход |<span class="personal-info__data--enter"><a href="#">Регистрация</a></span></p>
+                            <p class="personal-info__data--enter">Вход | <span class="personal-info__data--enter"><a href="#">Регистрация</a></span></p>
                         </div>
                     </div>
                     <div class="personal-info">
@@ -60,7 +60,7 @@
             </select>
             <div class="catalog__gift">
                 <img src="img/gift.png" alt="gift">
-                <p>Акция</p>
+                <p><a href="#">Акция</a></p>
             </div>
             <div class="catalog__search">
                 <input class="catalog__search--input" type="search" placeholder="Введите запрос для поиска">
@@ -92,108 +92,105 @@
         </div>
         <!-- STOCK start -->
         <div class="stock">
-            <div class="stock__card">
+            <div class="stock__card-1">
                 <div class="stock__card--descr">
                     <p class="title">Набор кастрюль “Vicalina”<br>
                         по акционной цене.</p>
-                    <p class="price"><span class="old">1000</span><span class="new">850</span></p>
+                    <p class="price"><span class="price__old">1000грн</span><span class="price__new">850грн</span></p>
                 </div>
-                <img src="img/dishes.jpg" alt="dish">
             </div>
-            <div class="stock__card">
+            <div class="stock__card-2">
                 <div class="stock__card--descr">
-                    <p class="title">Лучшие цены на текстиль,<br>
+                    <p class="title-towels">Лучшие цены на текстиль,<br>
                         только в апреле:</p>
-                    <p class="price">Скидка 20%</p>
+                    <p class="price-towels">Скидка 20%</p>
                 </div>
-                <img src="img/towels.jpg" alt="towels">
             </div>
-            <div class="stock__card">
+            <div class="stock__card-3">
                 <div class="stock__card--descr">
-                    <p class="title">Чейник из нержавеющейстали<br>
+                    <p class="title">Чaйник из нержавеющей стали<br>
                         “Corsair” по акционной цене.</p>
-                    <p class="price"><span class="old">1000</span><span class="new">850</span></p>
+                    <p class="price"><span class="price__old">1000грн</span><span class="price__new">850грн</span></p>
                 </div>
-                <img src="img/teapot.jpg" alt="teapot">
             </div>
         </div>
         <!-- STOCK end -->
-        <div class="best-dials">
-            <p class="best-dials__title">Лучшие предложения</p>
-        </div>
+        <h3 class="best-dials__title">Лучшие предложения</h3>
         <!-- CATALOG start -->
         <div class="catalog">
             <div class="catalog__card">
-                <div class="catalog__card--discount">
-                    <p>20%</p>
+                <div class="catalog__card--discount-1">
+                    <p>-20%</p>
                 </div>
-                <img src="img/teapot_2.jpg" alt="teapot">
-                <div class="descr">
-                    <p class="descr__title">Мелкая бытовая техника</p>
-                    <p class="descr__link"><a href="#">Электрочайник из нержавеющей<br>
+                <div class="catalog__card--img">
+                    <img src="img/teapot_2.jpg" alt="teapot">
+                </div>
+                <div class="card-descr">
+                    <p class="card-descr__title">Мелкая бытовая техника</p>
+                    <p class="card-descr__link"><a href="#">Электрочайник из нержавеющей<br>
                         стали Midea</a></p>
-                    <div class="descr__price">
-                        <div class="descr__price--num">
-                            <p><span>1300 грн</span><br><span>1190<sup>17</sup> грн</span></p>
+                    <div class="card-descr__price">
+                        <div class="card-descr__price--num">
+                            <p><span class="old-price">1300грн</span><br><span class="new-price">1190<sup>17</sup>грн</span></p>
                         </div>
-                        <button>
-                            <img src="img/basket_2.png" alt="">В корзину
+                        <button class="card-descr__price--btn">
+                            <img src="img/basket_2.png" alt="basket">В корзину
                         </button>
                     </div>
                 </div>
             </div>
             <div class="catalog__card">
-                <div class="catalog__card--discount">
-                    <p>new</p>
+                <div class="catalog__card--discount-2">
+                    <p>NEW</p>
                 </div>
-                <img src="img/towels_2.jpg" alt="towels_2">
-                <div class="descr">
-                    <p class="descr__title">Текстиль</p>
-                    <p class="descr__link"><a href="#">Махровые полотенца Tupperwire.<br>
+                <div class="catalog__card--img">
+                    <img src="img/towels_2.jpg" alt="teapot">
+                </div>
+                <div class="card-descr">
+                    <p class="card-descr__title">Текстиль</p>
+                    <p class="card-descr__link"><a href="#">Махровые полотенца Tupperwire.<br>
                         Цвета в ассортименте</a></p>
-                    <div class="descr__price">
-                        <div class="descr__price--num">
-                            <p><span>1300 грн</span><br><span>1190<sup>17</sup> грн</span></p>
+                    <div class="card-descr__price">
+                        <div class="card-descr__price--num">
+                            <p><span class="old-price">1300грн</span><br><span class="new-price">1190<sup>17</sup>грн</span></p>
                         </div>
-                        <button>
+                        <button class="card-descr__price--btn">
                             <img src="img/basket_2.png" alt="">В корзину
                         </button>
                     </div>
                 </div>
             </div>
             <div class="catalog__card">
-                <div class="catalog__card--discount">
-                    <p>new</p>
+                <div class="catalog__card--img">
+                    <img src="img/teapot-reverse.png" alt="teapot">
                 </div>
-                <img src="img/teapot-reverse.jpg" alt="teapot-reverse">
-                <div class="descr">
-                    <p class="descr__title">Мелкая бытовая техника</p>
-                    <p class="descr__link"><a href="#">Электрочайник из нержавеющей<br>
+                <div class="card-descr">
+                    <p class="card-descr__title">Мелкая бытовая техника</p>
+                    <p class="card-descr__link"><a href="#">Электрочайник из нержавеющей<br>
                         стали Midea</a></p>
-                    <div class="descr__price">
-                        <div class="descr__price--num">
-                            <p><span>1300 грн</span><br><span>1190<sup>17</sup> грн</span></p>
+                    <div class="card-descr__price">
+                        <div class="card-descr__price--num">
+                            <p><span class="old-price">1300грн</span><br><span class="new-price">1190<sup>17</sup>грн</span></p>
                         </div>
-                        <button>
-                            <img src="img/basket_2.jpg" alt="">В корзину
+                        <button class="card-descr__price--btn">
+                            <img src="img/basket_2.png" alt="">В корзину
                         </button>
                     </div>
                 </div>
             </div>
             <div class="catalog__card">
-                <div class="catalog__card--discount">
-                    <p>new</p>
+                <div class="catalog__card--img">
+                    <img src="img/knifes.jpg" alt="teapot">
                 </div>
-                <img src="img/knifes.jpg" alt="knifes">
-                <div class="descr">
-                    <p class="descr__title">КУХОННЫЕ ПРИБОРЫ</p>
-                    <p class="descr__link"><a href="#">Набор ножей + ножницы + точило<br>
+                <div class="card-descr">
+                    <p class="card-descr__title">КУХОННЫЕ ПРИБОРЫ</p>
+                    <p class="card-descr__link"><a href="#">Набор ножей + ножницы + точило<br>
                         Royalty Line</a></p>
-                    <div class="descr__price">
-                        <div class="descr__price--num">
-                            <p><span>1300 грн</span><br><span>1190<sup>17</sup> грн</span></p>
+                    <div class="card-descr__price">
+                        <div class="card-descr__price--num">
+                            <p><span class="old-price">1300грн</span><br><span class="new-price">1190<sup>17</sup>грн</span></p>
                         </div>
-                        <button>
+                        <button class="card-descr__price--btn">
                             <img src="img/basket_2.png" alt="">В корзину
                         </button>
                     </div>
@@ -204,10 +201,10 @@
         <div class="sale">
             <div class="sale__descr">
                 <p class="sale__descr--text">АКЦИОННОЕ ПРЕДЛОЖЕНИЕ</p>
-                <p class="sale__descr--text_2">Скидки на сковороды до -25%!</p>
+                <p class="sale__descr--text-2">Скидки на сковороды до -25%!</p>
             </div>
-            <img src="img/pan.jpg" alt="pan">
-            <button>Подробнее</button>
+            <img src="img/pan.png" alt="pan">
+            <button class="sale__btn">Подробнее</button>
         </div>
         <h3>Новости, статьи, обзоры</h3>
         <!-- SECTION NEWS start -->
@@ -269,37 +266,41 @@
         <div class="subscribe">
             <div class="subscribe__mail">
                 <img src="img/mail.png" alt="mail">
-                <p>Для наших подписчиков - скидки, новинки и полезные советы</p>
             </div>
-            <div class="subscribe__input">
-                <input type="text">
-                <button>Подписаться</button>
+            <p class="subscribe__text">Для наших подписчиков - скидки, новинки и полезные советы</p>
+            <div class="subscribe__send">
+                <input placeholder="Введите свой Email для подписки на новости" class="subscribe__send--input" type="text">
+                <button class="subscribe__send--btn">Подписаться</button>
             </div>
         </div>
     </div>
+    <!-- FOOTER start -->
     <footer>
-        <div class="logo">
-            <img src="img/logo_2.png" alt="logo">
-            <p>Оптовый магазин товаров для дома<br>
-                “Господар” (с) 2019 Все права </p>
-            <p>Сайт разработан компанией <a href="#">LS MARKETING</a></p>
-        </div>
-        <div class="contact">
-            <ul>
-                <li><a href="#">О нас</a> |</li>
-                <li><a href="#">Информация о доставке</a> |</li>
-                <li><a href="#">Политика безопасности</a> |</li>
-                <li><a href="#">Условия соглашения</a> |</li>
-                <li><a href="#">Связаться с нами</a></li>
-            </ul>
-            <p class="contact__phone">+38 (067) 613-33-06</p>
-            <p class="contact__adress">г.Мелитополь, ул. Интеркультурная, 38</p>
-            <div class="contact__map">
-                <img src="img/maps-and-flags.png" alt="location">
-                <a href="#">Посмотреть на карте</a>
+        <div class="footer">
+            <div class="footer__logo">
+                <img class="footer__logo--img" src="img/logo_2.png" alt="logo">
+                <p class="footer__logo--text">Оптовый магазин товаров для дома<br>
+                    “Господар” (с) 2019 Все права защищены</p>
+                <p class="footer__logo--text">Сайт разработан компанией <a href="#">LS MARKETING</a></p>
+            </div>
+            <div class="footer__contact">
+                <ul>
+                    <li><a href="#">О нас</a> |</li>
+                    <li><a href="#">Информация о доставке</a> |</li>
+                    <li><a href="#">Политика безопасности</a> |</li>
+                    <li><a href="#">Условия соглашения</a> |</li>
+                    <li><a href="#">Связаться с нами</a></li>
+                </ul>
+                <p class="footer__contact--phone">+38 (067) 613-33-06</p>
+                <p class="footer__contact--adress">г.Мелитополь, ул. Интеркультурная, 38</p>
+                <div class="footer__contact--map">
+                    <img src="img/maps-and-flags.png" alt="location">
+                    <a href="#">Посмотреть на карте</a>
+                </div>
             </div>
         </div>
     </footer>
+    <!-- FOOTER end -->
     <!-- WRAPPER end -->
 </body>
 
