@@ -30,7 +30,7 @@
                         <img src="img/avatar.png" alt="avatar">
                         <div class="personal-info__data">
                             <p class="personal-info__data--enter">Личный кабинет</p>
-                            <p class="personal-info__data--enter">Вход | <span class="personal-info__data--enter"><a href="#">Регистрация</a></span></p>
+                            <p class="personal-info__data--enter">Вход | <span><a href="#">Регистрация</a></span></p>
                         </div>
                     </div>
                     <div class="personal-info">
@@ -44,36 +44,42 @@
             </div>
         </header>
         <!-- HEADER end -->
-        <!-- CATALOG start -->
-        <div class="catalog">
-            <select class="catalog__drop-down">
-                <option label="Каталог товаров" value="1"></option>
-                <option>Бытовая химия</option>
-                <option>Хозтовары</option>
-                <option>Велозапчасти</option>
-                <option>Весы</option>
-                <option>Галантерея</option>
-                <option>Обувь</option>
-                <option>Пластиковые изделия</option>
-                <option>Текстиль</option>
-                <option>Клеенка, скатерти</option>
-            </select>
-            <div class="catalog__gift">
+        <!-- LIST start -->
+        <div class="list">
+            <nav class="list__drop-down">
+                <ul >
+                    <li><img src="img/menu.svg" alt="menu"><span>Каталог товаров</span>
+                    <ul>
+                        <li><img src="img/cleaning.png" alt="cleaning"><a href="#">Бытовая химия</a></li>
+                        <li><img src="img/sweep.png" alt="sweep"><a href="#">Хозтовары</a></li>
+                        <li><img src="img/crankset.png" alt="crankset"><a href="#">Велозапчасти</a></li>
+                        <li><img src="img/libra.png" alt="libra"><a href="#">Весы</a></li>
+                        <li><img src="img/wool.png" alt="wool"><a href="#">Галантерея</a></li>
+                        <li><img src="img/boots.png" alt="boots"><a href="#">Обувь</a></li>
+                        <li><img src="img/bucket.png" alt="bucket"><a href="#">Пластиковые изделия</a></li>
+                        <li><img src="img/dish.png" alt="dish"><a href="#">Посуда</a></li>
+                        <li><img src="img/towel.png" alt="towel"><a href="#">Текстиль</a></li>
+                        <li><img src="img/tablecloth.png" alt="tablecloth"><a href="#">Клеенка, скатерти</a></li>
+                    </ul>
+                </ul>
+            </nav>
+            <div class="list__gift">
                 <img src="img/gift.png" alt="gift">
                 <p><a href="#">Акция</a></p>
             </div>
-            <div class="catalog__search">
-                <input class="catalog__search--input" type="search" placeholder="Введите запрос для поиска">
-                <div class="catalog__search--descr">
+            <div class="list__search">
+                <input class="list__search--input" type="search" placeholder="Введите запрос для поиска">
+                <div class="list__search--descr">
                     <p>Все категории</p>
                     <img src="img/Shape_3.png" alt="shape">
                 </div>
-                <button class="catalog__search--btn">ИСКАТЬ</button>
+                <button class="list__search--btn">ИСКАТЬ</button>
             </div>
         </div>
-        <!-- CATALOG end -->
+        <!-- LIST end -->
         <!-- SLIDER start -->
         <div class="slider">
+            <svg class="slider__svg" height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon points="352,128.4 319.7,96 160,256 160,256 160,256 319.7,416 352,383.6 224.7,256 "/></svg>
             <div class="slider__img-1">
                 <img src="img/slider.jpg" alt="slider">
             </div>
@@ -85,6 +91,7 @@
                 </div>
                 <img src="img/kitchen.jpg" alt="kitchen">
             </div>
+            <svg class="slider__svg" height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "/></svg>
         </div>
         <!-- SLIDER end -->
         <div class="free-delivery">
@@ -161,7 +168,7 @@
                 </div>
             </div>
             <div class="catalog__card">
-                <div class="catalog__card--img">
+                <div class="catalog__card--img pdng">
                     <img src="img/teapot-reverse.png" alt="teapot">
                 </div>
                 <div class="card-descr">
@@ -179,7 +186,163 @@
                 </div>
             </div>
             <div class="catalog__card">
+                <div class="catalog__card--img pdng">
+                    <img src="img/knifes.jpg" alt="teapot">
+                </div>
+                <div class="card-descr">
+                    <p class="card-descr__title">КУХОННЫЕ ПРИБОРЫ</p>
+                    <p class="card-descr__link"><a href="#">Набор ножей + ножницы + точило<br>
+                        Royalty Line</a></p>
+                    <div class="card-descr__price">
+                        <div class="card-descr__price--num">
+                            <p><span class="old-price">1300грн</span><br><span class="new-price">1190<sup>17</sup>грн</span></p>
+                        </div>
+                        <button class="card-descr__price--btn">
+                            <img src="img/basket_2.png" alt="">В корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__card">
+                <div class="catalog__card--discount-1">
+                    <p>-20%</p>
+                </div>
                 <div class="catalog__card--img">
+                    <img src="img/teapot_2.jpg" alt="teapot">
+                </div>
+                <div class="card-descr">
+                    <p class="card-descr__title">Мелкая бытовая техника</p>
+                    <p class="card-descr__link"><a href="#">Электрочайник из нержавеющей<br>
+                        стали Midea</a></p>
+                    <div class="card-descr__price">
+                        <div class="card-descr__price--num">
+                            <p><span class="old-price">1300грн</span><br><span class="new-price">1190<sup>17</sup>грн</span></p>
+                        </div>
+                        <button class="card-descr__price--btn">
+                            <img src="img/basket_2.png" alt="basket">В корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__card">
+                <div class="catalog__card--discount-2">
+                    <p>NEW</p>
+                </div>
+                <div class="catalog__card--img">
+                    <img src="img/towels_2.jpg" alt="teapot">
+                </div>
+                <div class="card-descr">
+                    <p class="card-descr__title">Текстиль</p>
+                    <p class="card-descr__link"><a href="#">Махровые полотенца Tupperwire.<br>
+                        Цвета в ассортименте</a></p>
+                    <div class="card-descr__price">
+                        <div class="card-descr__price--num">
+                            <p><span class="old-price">1300грн</span><br><span class="new-price">1190<sup>17</sup>грн</span></p>
+                        </div>
+                        <button class="card-descr__price--btn">
+                            <img src="img/basket_2.png" alt="">В корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__card">
+                <div class="catalog__card--img pdng">
+                    <img src="img/teapot-reverse.png" alt="teapot">
+                </div>
+                <div class="card-descr">
+                    <p class="card-descr__title">Мелкая бытовая техника</p>
+                    <p class="card-descr__link"><a href="#">Электрочайник из нержавеющей<br>
+                        стали Midea</a></p>
+                    <div class="card-descr__price">
+                        <div class="card-descr__price--num">
+                            <p><span class="old-price">1300грн</span><br><span class="new-price">1190<sup>17</sup>грн</span></p>
+                        </div>
+                        <button class="card-descr__price--btn">
+                            <img src="img/basket_2.png" alt="">В корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__card">
+                <div class="catalog__card--img pdng">
+                    <img src="img/knifes.jpg" alt="teapot">
+                </div>
+                <div class="card-descr">
+                    <p class="card-descr__title">КУХОННЫЕ ПРИБОРЫ</p>
+                    <p class="card-descr__link"><a href="#">Набор ножей + ножницы + точило<br>
+                        Royalty Line</a></p>
+                    <div class="card-descr__price">
+                        <div class="card-descr__price--num">
+                            <p><span class="old-price">1300грн</span><br><span class="new-price">1190<sup>17</sup>грн</span></p>
+                        </div>
+                        <button class="card-descr__price--btn">
+                            <img src="img/basket_2.png" alt="">В корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__card">
+                <div class="catalog__card--discount-1">
+                    <p>-20%</p>
+                </div>
+                <div class="catalog__card--img">
+                    <img src="img/teapot_2.jpg" alt="teapot">
+                </div>
+                <div class="card-descr">
+                    <p class="card-descr__title">Мелкая бытовая техника</p>
+                    <p class="card-descr__link"><a href="#">Электрочайник из нержавеющей<br>
+                        стали Midea</a></p>
+                    <div class="card-descr__price">
+                        <div class="card-descr__price--num">
+                            <p><span class="old-price">1300грн</span><br><span class="new-price">1190<sup>17</sup>грн</span></p>
+                        </div>
+                        <button class="card-descr__price--btn">
+                            <img src="img/basket_2.png" alt="basket">В корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__card">
+                <div class="catalog__card--discount-2">
+                    <p>NEW</p>
+                </div>
+                <div class="catalog__card--img">
+                    <img src="img/towels_2.jpg" alt="teapot">
+                </div>
+                <div class="card-descr">
+                    <p class="card-descr__title">Текстиль</p>
+                    <p class="card-descr__link"><a href="#">Махровые полотенца Tupperwire.<br>
+                        Цвета в ассортименте</a></p>
+                    <div class="card-descr__price">
+                        <div class="card-descr__price--num">
+                            <p><span class="old-price">1300грн</span><br><span class="new-price">1190<sup>17</sup>грн</span></p>
+                        </div>
+                        <button class="card-descr__price--btn">
+                            <img src="img/basket_2.png" alt="">В корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__card">
+                <div class="catalog__card--img pdng">
+                    <img src="img/teapot-reverse.png" alt="teapot">
+                </div>
+                <div class="card-descr">
+                    <p class="card-descr__title">Мелкая бытовая техника</p>
+                    <p class="card-descr__link"><a href="#">Электрочайник из нержавеющей<br>
+                        стали Midea</a></p>
+                    <div class="card-descr__price">
+                        <div class="card-descr__price--num">
+                            <p><span class="old-price">1300грн</span><br><span class="new-price">1190<sup>17</sup>грн</span></p>
+                        </div>
+                        <button class="card-descr__price--btn">
+                            <img src="img/basket_2.png" alt="">В корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__card">
+                <div class="catalog__card--img pdng">
                     <img src="img/knifes.jpg" alt="teapot">
                 </div>
                 <div class="card-descr">
