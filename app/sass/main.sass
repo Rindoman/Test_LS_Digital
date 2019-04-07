@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat')
+
+=Caveat
+    font-family: 'Caveat', sans-serif
 =helvetica
 	font-family: 'HelveticaNeue', sans-serif
 
@@ -42,8 +46,10 @@ h3
             display: flex
             justify-content: space-between
             & a
-                color: $yellow
                 text-decoration: none
+                color: $font-color
+                &:hover
+                    color: $yellow
             &--contact
                 padding-left: 5px
 
@@ -113,6 +119,8 @@ h3
                 color: #aeaeae
                 background: #ffffff
                 font-size: 16px
+                &:hover
+                    background: #dcdcdc
             & img
                 margin-right: 15px
             & a
@@ -312,6 +320,7 @@ h3
             align-items: center
             justify-content: center
             font-weight: bold
+            cursor: pointer
             & img
                 margin-right: 20px
 
